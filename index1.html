@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <form id="password-form">
+            <div class="password-box">
+                <input type="text" id="password" readonly>
+                <button type="button" id="copy">📋</button>
+            </div>
+            <div class="options">
+                <label>Longitud: <span id="length-value">10</span></label>
+                <input type="range" id="length" name="length" min="8" max="20" value="10">
+                <label><input type="checkbox" id="uppercase" name="uppercase" checked> Incluir mayúsculas</label>
+                <label><input type="checkbox" id="lowercase" name="lowercase" checked> Incluir minúsculas</label>
+                <label><input type="checkbox" id="numbers" name="numbers" checked> Incluir números</label>
+                <label><input type="checkbox" id="symbols" name="symbols"> Incluir símbolos</label>
+            </div>
+            <div class="strength" id="strength-level">Nivel: Medio</div>
+            <button type="submit" id="generate">GENERAR</button>
+        </form>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
